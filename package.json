@@ -1,0 +1,37 @@
+{
+  "name": "koatty_etcd",
+  "version": "1.0.0",
+  "description": "Etcd configuration client plugin for Koatty.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "del-cli --force dist && tsc",
+    "prepublishOnly": "npm test && npm run build",
+    "test": "tslint 'src/**/*.ts'"
+  },
+  "engines": {
+    "node": ">10.0.0"
+  },
+  "author": "richenlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkkoa/koatty_etcd/issues"
+  },
+  "homepage": "https://github.com/thinkkoa/koatty_etcd",
+  "devDependencies": {
+    "@types/koa": "^2.x.x",
+    "@types/node": "^12.x.x",
+    "del-cli": "^3.0.1",
+    "koatty": "^2.x.x",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "tslint-config-alloy": "^0.2.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "etcd3": "^1.0.2",
+    "reflect-metadata": "^0.1.13",
+    "think_lib": "^2.6.3",
+    "think_logger": "^2.3.0",
+    "tslib": "^1.11.2"
+  }
+}
