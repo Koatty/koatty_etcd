@@ -1,7 +1,7 @@
 /*
  * @Author: richen
  * @Date: 2020-10-10 15:53:12
- * @LastEditTime: 2020-10-10 18:36:47
+ * @LastEditTime: 2020-10-10 18:51:39
  * @Description:
  * @Copyright (c) - <richenlin(at)gmail.com>
  */
@@ -89,5 +89,5 @@ export async function PluginEtcd(options: PluginOptions, app: Koatty) {
     };
     helper.define(app, "initEtcd", initEtcd, true);
 
-
+    return initEtcd(options);
 }
